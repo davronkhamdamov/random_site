@@ -36,6 +36,7 @@ nav {
   animation: visible 0.5s forwards;
   transform-origin: center;
   opacity: 0;
+  user-select: none;
 }
 .wrapper + .wrapper {
   animation-delay: 0.1s;

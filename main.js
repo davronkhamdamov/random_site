@@ -18,7 +18,7 @@ random_button.addEventListener('click', () => {
                 div.append(name)
                 box.append(div)
                 div.addEventListener('click', (e) => {
-                    e.target.remove()
+                    confirm("Are you sure to remove") && e.target.remove()
                 })
             })
         })
