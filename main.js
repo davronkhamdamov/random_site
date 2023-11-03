@@ -15,11 +15,11 @@ random_button.addEventListener('click', () => {
                 div.classList.add("wrapper")
                 name.classList.add("names")
                 name.textContent = (i + 1) + " - " + e.name
+                div.append(name)
+                box.append(div)
                 div.addEventListener('click', (e) => {
                     e.target.remove()
                 })
-                div.append(name)
-                box.append(div)
             })
         })
 })
