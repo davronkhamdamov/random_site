@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Web Site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation/style.css">
 </head>
 
 <body>
-    <nav>
-        <h1>Welcome to Random Site</h1>
-        <p>This website helps you choose a random queue</p>
-    </nav>
-    <div class="button">
-        <button id="random_button">Click to select random users</button>
+    <div class="generate">
+        <nav>
+            <h1>Welcome to Random Site</h1>
+            <p>This website helps you choose a random queue</p>
+        </nav>
+        <div class="button">
+            <button id="random_button">Click to select random users</button>
+        </div>
+        <div class="box"></div>
     </div>
-    <div class="box"></div>
+    <div id="animation">
+        <div class="wheel-and-hamster" role="img" aria-label="Orange and tan hamster running in a metal wheel">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

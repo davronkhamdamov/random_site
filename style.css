@@ -9,8 +9,8 @@ nav {
 }
 .button button {
   width: 200px;
-  height: 30px;
-  background: rgb(34, 34, 180);
+  height: 50px;
+  background: rgb(73, 73, 255);
   color: white;
   border-radius: 20px;
   border: none;
@@ -59,4 +59,12 @@ nav {
     opacity: 1;
     transform: translateY(20px);
   }
+}
+.generate {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#animation {
+  display: none;
 }
