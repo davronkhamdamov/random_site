@@ -71,7 +71,7 @@ const animate_remove = (first, second) => {
 }
 
 random_button.addEventListener('click', () => {
-    Generate_Users()
+    Generate_Users(users_data)
 })
 function Generate_Users() {
     overlay.remove()
