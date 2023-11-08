@@ -50,6 +50,9 @@ nav {
 .wrapper + .wrapper + .wrapper + .wrapper + .wrapper {
   animation-delay: 0.4s;
 }
+.wrapper + .wrapper + .wrapper + .wrapper + .wrapper + .wrapper {
+  animation-delay: 0.5s;
+}
 @keyframes visible {
   100% {
     width: 100%;
