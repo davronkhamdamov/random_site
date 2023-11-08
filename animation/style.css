@@ -7,12 +7,12 @@
 :root {
   --bg: #eee;
   --fg: hsl(223, 10%, 10%);
-  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+  font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1280 - 320));
 }
-body {
+#animation {
   background: var(--bg);
-  height: 90vh;
-  display: grid;
+  height: 100vh;
+  display: none;
   place-items: center;
 }
 .wheel-and-hamster {

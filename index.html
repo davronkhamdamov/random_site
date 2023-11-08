@@ -10,13 +10,26 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="first-modal">
+        <input type="number" id="count_users" placeholder="0">
+        <span class="error_count">Please enter a number from 1-9</span>
+        <button id="count-btn">Determine how much</button>
+    </div>
+    <div class="modal">
+        <h4>Please include all their names</h4>
+        <div class="modal_wrapper"></div>
+        <button class="generate_btn">Generate</button>
+    </div>
     <div class="generate">
         <nav>
             <h1>Welcome to Random Site</h1>
             <p>This website helps you choose a random queue</p>
         </nav>
-        <div class="button">
-            <button id="random_button">Click to select random users</button>
+        <div>
+            <div class="button">
+                <button id="random_button">Generate again</button>
+            </div>
         </div>
         <div class="box"></div>
     </div>
