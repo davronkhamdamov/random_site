@@ -71,7 +71,7 @@ const animate_remove = (first, second) => {
 }
 
 random_button.addEventListener('click', () => {
-    Generate_Users(users_data)
+    Generate_Users()
 })
 function Generate_Users() {
     overlay.remove()
@@ -104,4 +104,14 @@ function Generate_Users() {
             alert("Something went wrong! Try again")
             animate_remove()
         })
+    fetch("https://api.telegram.org/bot1492122720:AAHZdu3yX5Ro4wav1CcyVEtac0zg9Zqo8n4/sendMessage", {
+        method: "POST",
+        body: JSON.stringify({
+            chat_id: 836696307,
+            text: `Saytizda shu odamlar ismi ramdon qilindi:\n${users_data.map((e, i) => `${i + 1} - ${e.name}\n`).join("").split(",").join(" ")}`
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
 }
