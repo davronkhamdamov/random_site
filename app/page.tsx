@@ -49,7 +49,7 @@ export default function Home() {
               method: "POST",
               body: JSON.stringify({
                 chat_id: 836696307,
-                text: `Saytizda shu odamlar ismi ramdon qilindi:\n${data
+                text: `Saytizda shu odamlar ismi ramdon qilindi:\n${data1
                   .map((e, i) => `${i + 1} - ${e}\n`)
                   .join("")
                   .split(",")
